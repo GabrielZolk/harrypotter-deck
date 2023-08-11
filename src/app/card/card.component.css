@@ -1,0 +1,26 @@
+
+
+.card {
+    border: 5px solid #7250c2;
+    border-radius: 5px;
+    background-color: black !important;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: gold;
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+}
+
+.card h2 {
+  font-family: 'HarryPotter', sans-serif;
+}
+
+.card p {
+  font-family: 'Dosis', sans-serif;
+}
+  
