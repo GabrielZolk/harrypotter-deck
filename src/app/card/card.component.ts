@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -21,10 +20,5 @@ export class CardComponent {
   @Input() patronus: string = '';
   @Input() species: string = '';
   @Input() wands: string = '';
-
-  constructor(private router: Router) {}
-
-  goToCharacterDetails(id: string) {
-    this.router.navigate(['/character', id]);
-  }
+  @Input() characterId: string = '';
 }

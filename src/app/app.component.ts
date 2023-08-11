@@ -3,31 +3,8 @@ import { CharacterService } from './character.service';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div class="card-container" [style]="cardContainerStyles">
-  <ng-container *ngFor="let character of characters">
-    <ng-container *ngIf="character.image">
-      <app-card
-        [characterName]="character.name"
-        [characterDescription]="character.description"
-        [actor]="character.actor"
-        [alive]="character.alive"
-        [alternateNames]="character.alternateNames"
-        [ancestry]="character.ancestry"
-        [birth]="character.birth"
-        [eyeColor]="character.eyeColor"
-        [hairColor]="character.hairColor"
-        [house]="character.house"
-        [characterImage]="character.image"
-        [patronus]="character.patronus"
-        [species]="character.species"
-        [wands]="character.wands"
-      ></app-card>
-    </ng-container>
-  </ng-container>
-</div>
-`,
-
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   characters: any[] = [];
@@ -46,12 +23,4 @@ export class AppComponent implements OnInit {
       });
   }
 
-  cardContainerStyles = `
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: 'HarryPotter', sans-serif;
-  font-size: 1.3rem;
-  background-color: rgb(58, 58, 58);
-`;
 }

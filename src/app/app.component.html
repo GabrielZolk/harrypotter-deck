@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+<div class="home-container">
+  <ng-container *ngFor="let character of characters">
+    <ng-container *ngIf="character.image">
+      <app-card [characterName]="character.name" [characterDescription]="character.description" [actor]="character.actor" [alive]="character.alive" [alternateNames]="character.alternateNames" [ancestry]="character.ancestry" [birth]="character.birth" [eyeColor]="character.eyeColor" [hairColor]="character.hairColor" [house]="character.house" [characterImage]="character.image" [patronus]="character.patronus" [species]="character.species" [wands]="character.wands"></app-card>
+    </ng-container>
+  </ng-container>
+</div>
